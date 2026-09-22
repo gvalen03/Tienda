@@ -1,0 +1,152 @@
+/* =========================
+   VARIABLES GLOBALES
+========================= */
+:root {
+    --color-fondo: #f4f6f8;
+    --color-superficie: #ffffff;
+
+    --color-principal: #1e293b;
+    --color-secundario: #334155;
+    --color-acento: #0f766e;
+
+    --color-texto: #0f172a;
+    --color-texto-suave: #64748b;
+
+    --color-borde: #cbd5e1;
+    --color-peligro: #b91c1c;
+
+    --radio-sm: 6px;
+    --radio-md: 10px;
+    --radio-lg: 14px;
+
+    --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    --ancho-maximo: 1200px;
+}
+
+
+/* =========================
+   RESET
+========================= */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HTML Y BODY
+========================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+
+/* =========================
+   ELEMENTOS GENERALES
+========================= */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.contenedor {
+    width: min(100% - 48px, var(--ancho-maximo));
+    margin-inline: auto;
+}
+
+
+/* =========================
+   BOTONES BASE
+========================= */
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: var(--radio-md);
+
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   ACCESIBILIDAD
+========================= */
+:focus-visible {
+    outline: 2px solid var(--color-acento);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   UTILIDADES
+========================= */
+.texto-centro {
+    text-align: center;
+}
+
+.oculto {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE BASE
+========================= */
+@media (max-width: 768px) {
+
+    .contenedor {
+        width: min(100% - 32px, var(--ancho-maximo));
+    }
+
+}
