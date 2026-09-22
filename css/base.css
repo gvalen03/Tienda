@@ -1,19 +1,22 @@
 /* =========================
    VARIABLES GLOBALES
 ========================= */
+
 :root {
-    --color-fondo: #f4f6f8;
-    --color-superficie: #ffffff;
+    --color-fondo: #FFFDF7;
+    --color-superficie: #FFFFFF;
 
-    --color-principal: #1e293b;
-    --color-secundario: #334155;
-    --color-acento: #0f766e;
+    --color-principal: #6D5DFB;
+    --color-secundario: #5145CD;
+    --color-acento: #FF8A65;
 
-    --color-texto: #0f172a;
-    --color-texto-suave: #64748b;
+    --color-texto: #2D2A32;
+    --color-texto-suave: #6B7280;
 
-    --color-borde: #cbd5e1;
-    --color-peligro: #b91c1c;
+    --color-borde: #E8E5F2;
+
+    --color-exito: #2E9D69;
+    --color-peligro: #E05252;
 
     --radio-sm: 6px;
     --radio-md: 10px;
@@ -23,7 +26,6 @@
 
     --ancho-maximo: 1200px;
 }
-
 
 /* =========================
    RESET

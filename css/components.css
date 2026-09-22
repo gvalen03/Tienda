@@ -1,0 +1,74 @@
+/* =========================
+   BUSCADOR
+========================= */
+
+.seccion-buscador {
+    margin-bottom: 30px;
+}
+
+.seccion-buscador input {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 12px 14px;
+
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-md);
+}
+
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: 20px;
+}
+
+.producto {
+    padding: 20px;
+
+    background-color: var(--color-superficie);
+
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-lg);
+
+    box-shadow: var(--sombra-suave);
+}
+
+.producto .precio {
+    color: var(--color-acento);
+    font-weight: bold;
+}
+
+.producto button {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+
+/* =========================
+   CARRITO
+========================= */
+
+.carrito {
+    padding: 20px;
+
+    background-color: var(--color-superficie);
+
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-lg);
+
+    box-shadow: var(--sombra-suave);
+}
+
+#btn-vaciar-carrito {
+    background-color: var(--color-peligro);
+    color: white;
+}

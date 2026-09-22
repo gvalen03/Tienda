@@ -1,0 +1,35 @@
+const productos = [
+    {
+        id: 1,
+        nombre: "Cuaderno universitario",
+        precio: 12000,
+        stock: 10,
+        imagen: "./assets/img/cuaderno.jpg"
+    },
+    {
+        id: 2,
+        nombre: "Marcadores",
+        precio: 8500,
+        stock: 15,
+        imagen: "./assets/img/marcadores.jpg"
+    },
+    {
+        id: 3,
+        nombre: "Agenda",
+        precio: 22000,
+        stock: 6,
+        imagen: "./assets/img/agenda.jpg"
+    }
+];
+
+function buscarProductoPorId(id) {
+    return productos.find(producto => producto.id === id);
+}
+
+function filtrarProductos(texto) {
+    const busqueda = texto.toLowerCase().trim();
+
+    return productos.filter(producto =>
+        producto.nombre.toLowerCase().includes(busqueda)
+    );
+}

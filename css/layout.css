@@ -1,0 +1,37 @@
+header {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+nav {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 16px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.tienda {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 24px;
+
+    text-align: center;
+
+    background-color: var(--color-principal);
+    color: white;
+}
