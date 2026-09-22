@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Tienda</title>
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
+    <!-- =========================
+         NAVEGACIÓN
+    ========================== -->
+    <header>
+
+        <nav>
+            <a href="./index.html">
+                Tienda
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+    <main>
+
+        <!-- Título -->
+        <section class="encabezado-tienda">
+
+            <h1>Tienda</h1>
+
+            <p>
+                Encuentra los productos disponibles en nuestro catálogo.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             BUSCADOR
+        ========================== -->
+        <section class="seccion-buscador">
+
+            <label for="buscador">
+                Buscar producto
+            </label>
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="Escribe el nombre de un producto..."
+            >
+
+        </section>
+
+
+        <!-- =========================
+             TIENDA
+        ========================== -->
+        <section class="tienda">
+
+            <!-- CATÁLOGO -->
+            <section class="catalogo">
+
+                <h2>Productos</h2>
+
+                <div id="contenedor-productos">
+
+                    <!--
+                        Las tarjetas de productos
+                        se crearán desde JavaScript.
+                    -->
+
+                </div>
+
+            </section>
+
+
+            <!-- CARRITO -->
+            <aside class="carrito">
+
+                <h2>Carrito</h2>
+
+                <div id="contenedor-carrito">
+
+                    <p>
+                        Tu carrito está vacío.
+                    </p>
+
+                </div>
+
+                <div class="resumen-carrito">
+
+                    <p>
+                        Total:
+                        <strong id="total-carrito">
+                            $0
+                        </strong>
+                    </p>
+
+                    <button
+                        type="button"
+                        id="btn-vaciar-carrito"
+                    >
+                        Vaciar carrito
+                    </button>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <p>
+            Miniproyecto Tienda
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="./js/productos.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/app.js"></script>
+
 </body>
+
 </html>
