@@ -19,14 +19,37 @@
     <!-- =========================
          NAVEGACIÓN
     ========================== -->
-    <header>
+    <header class="header">
+        <nav class="navbar contenedor">
 
-        <nav>
-            <a href="./index.html">
-                Tienda
+            <!-- Logo -->
+            <a href="./index.html" class="navbar__logo">
+                <img src="./images/logo.jpeg" alt="Logo de la papelería">
             </a>
-        </nav>
 
+            <div class="navbar__titulo">
+                <h1>
+                    Papelería
+                </h1>
+            </div>
+
+            <!-- Botón menú móvil -->
+            <button class="navbar__toggle" id="navbar-toggle" type="button" aria-label="Abrir menú de navegación"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Enlaces -->
+            <div class="navbar__links" id="navbar-links">
+                <a href="#inicio" class="activo">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#carrito">Carrito</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+        </nav>
     </header>
 
 
@@ -35,21 +58,6 @@
     ========================== -->
     <main>
 
-        <!-- Título -->
-        <section class="encabezado-tienda">
-
-            <h1>Tienda</h1>
-
-            <p>
-                Encuentra los productos disponibles en nuestro catálogo.
-            </p>
-
-        </section>
-
-
-        <!-- =========================
-             BUSCADOR
-        ========================== -->
         <section class="seccion-buscador">
 
             <label for="buscador">
@@ -60,60 +68,22 @@
 
         </section>
 
-
-        <!-- =========================
-             TIENDA
-        ========================== -->
-        <section class="tienda">
-
-            <!-- CATÁLOGO -->
-            <section class="catalogo">
-
-                <h2>Productos</h2>
-
-                <div id="contenedor-productos">
-
-                    <!--
-                        Las tarjetas de productos
-                        se crearán desde JavaScript.
-                    -->
-
-                </div>
-
-            </section>
-
-
-            <!-- CARRITO -->
-            <aside class="carrito">
-
-                <h2>Carrito</h2>
-
-                <div id="contenedor-carrito">
-
-                    <p>
-                        Tu carrito está vacío.
-                    </p>
-
-                </div>
-
-                <div class="resumen-carrito">
-
-                    <p>
-                        Total:
-                        <strong id="total-carrito">
-                            $0
-                        </strong>
-                    </p>
-
-                    <button type="button" id="btn-vaciar-carrito">
-                        Vaciar carrito
-                    </button>
-
-                </div>
-
-            </aside>
-
+        <section id="inicio" class="encabezado-tienda">
+            <h1>Bienvenido a Papelería Vibras</h1>
+            <p>Encuentra tus productos favoritos.</p>
         </section>
+
+        <section id="productos" class="catalogo">
+            <h2>Productos</h2>
+
+            <div id="contenedor-productos"></div>
+        </section>
+
+        <aside id="carrito" class="carrito">
+            <h2>Carrito</h2>
+
+            <div id="contenedor-carrito"></div>
+        </aside>
 
     </main>
 
