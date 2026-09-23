@@ -201,6 +201,59 @@
 }
 
 /* =========================
+   MENSAJE DEL CARRITO
+========================= */
+
+.mensaje-compra {
+    margin-top: 16px;
+
+    padding: 0;
+
+    border-radius: var(--radio-md);
+
+    font-weight: 600;
+
+    opacity: 0;
+
+    transform: translateY(-5px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+.mensaje-compra.exito,
+.mensaje-compra.error {
+    padding: 12px 16px;
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* COMPRA EXITOSA */
+
+.mensaje-compra.exito {
+    color: #166534;
+
+    background-color: #dcfce7;
+
+    border: 1px solid #bbf7d0;
+}
+
+
+/* ERROR */
+
+.mensaje-compra.error {
+    color: #991b1b;
+
+    background-color: #fee2e2;
+
+    border: 1px solid #fecaca;
+}
+
+/* =========================
    CATÁLOGO
 ========================= */
 

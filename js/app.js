@@ -65,11 +65,20 @@ btnVaciarCarrito.addEventListener(
 /* =========================
    COMPRAR
 ========================= */
+const btnComprar =
+    document.getElementById("btn-comprar");
+
+const mensajeCompra =
+    document.getElementById("mensaje-compra");    
 
 btnComprar.addEventListener("click", () => {
 
     if (carrito.length === 0) {
-        alert("El carrito está vacío.");
+        mostrarMensaje(
+            "El carrito está vacío.",
+            "error"
+        );
+
         return;
     }
 
@@ -77,5 +86,26 @@ btnComprar.addEventListener("click", () => {
 
     renderizarCarrito();
 
-    alert("Compra realizada exitosamente.");
+    mostrarMensaje(
+        "Compra realizada exitosamente.",
+        "exito"
+    );
+
 });
+
+function mostrarMensaje(texto, tipo) {
+
+    mensajeCompra.textContent = texto;
+
+    mensajeCompra.className =
+        `mensaje-compra ${tipo}`;
+
+    setTimeout(() => {
+
+        mensajeCompra.textContent = "";
+        mensajeCompra.className =
+            "mensaje-compra";
+
+    }, 3000);
+
+}
