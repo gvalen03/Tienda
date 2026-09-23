@@ -21,6 +21,8 @@
 ========================= */
 
 .carrito {
+    margin-top: 32px;
+
     padding: 24px;
 
     background-color: var(--color-superficie);
@@ -118,6 +120,7 @@
 }
 
 .resumen-carrito__total {
+    margin-right: auto;
     font-size: 1.2rem;
     color: var(--color-texto);
 }
@@ -125,6 +128,42 @@
 .resumen-carrito__total strong {
     color: var(--color-principal);
     font-size: 1.3rem;
+}
+
+/* =========================
+   BOTÓN COMPRAR
+========================= */
+
+#btn-comprar {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: var(--radio-md);
+
+    background-color: var(--color-principal);
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+#btn-comprar:hover {
+    background-color: var(--color-secundario);
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 14px rgba(109, 93, 251, 0.20);
+}
+
+#btn-comprar:active {
+    transform: scale(0.98);
 }
 
 

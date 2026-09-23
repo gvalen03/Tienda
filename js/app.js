@@ -57,3 +57,25 @@ btnVaciarCarrito.addEventListener(
 
     }
 );
+
+/* =========================
+    COMPRAR
+========================= */
+
+/* =========================
+   COMPRAR
+========================= */
+
+btnComprar.addEventListener("click", () => {
+
+    if (carrito.length === 0) {
+        alert("El carrito está vacío.");
+        return;
+    }
+
+    carrito.length = 0;
+
+    renderizarCarrito();
+
+    alert("Compra realizada exitosamente.");
+});
