@@ -36,15 +36,24 @@ contenedorProductos.addEventListener("click", event => {
 
 });
 
+btnVaciarCarrito.addEventListener(
+    "click",
+    () => {
 
-btnVaciarCarrito.addEventListener("click", () => {
+        vaciarCarrito();
 
-    vaciarCarrito();
 
-    const productosFiltrados =
-        filtrarProductos(buscador.value);
+        const productosFiltrados =
+            filtrarProductos(
+                buscador.value
+            );
 
-    renderizarProductos(productosFiltrados);
-    renderizarCarrito();
 
-});
+        renderizarProductos(
+            productosFiltrados
+        );
+
+        renderizarCarrito();
+
+    }
+);

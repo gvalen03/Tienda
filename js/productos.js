@@ -4,21 +4,21 @@ const productos = [
         nombre: "Cuaderno universitario",
         precio: 12000,
         stock: 10,
-        imagen: "./assets/img/cuaderno.jpg"
+        imagen: "./assets/images/cuaderno.jpeg"
     },
     {
         id: 2,
         nombre: "Marcadores",
         precio: 8500,
         stock: 15,
-        imagen: "./assets/img/marcadores.jpg"
+        imagen: "./assets/images/marcadores.jpeg"
     },
     {
         id: 3,
         nombre: "Agenda",
         precio: 22000,
         stock: 6,
-        imagen: "./assets/img/agenda.jpg"
+        imagen: "./assets/images/agenda.jpeg"
     }
 ];
 
