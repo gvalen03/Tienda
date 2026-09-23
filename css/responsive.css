@@ -257,3 +257,28 @@
         max-width: 100%;
     }
 }
+
+/* =========================
+   CARRITO
+========================= */
+
+@media (max-width: 768px) {
+
+    .carrito {
+        padding: 20px;
+    }
+
+    .carrito h2 {
+        font-size: 1.7rem;
+    }
+
+    .resumen-carrito {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #btn-vaciar-carrito {
+        width: 100%;
+    }
+
+}

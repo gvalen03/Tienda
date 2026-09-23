@@ -21,7 +21,7 @@
 ========================= */
 
 .carrito {
-    padding: 20px;
+    padding: 24px;
 
     background-color: var(--color-superficie);
 
@@ -31,9 +31,134 @@
     box-shadow: var(--sombra-suave);
 }
 
+.carrito h2 {
+    margin-bottom: 20px;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: var(--color-texto);
+}
+
+
+/* =========================
+   CONTENIDO DEL CARRITO
+========================= */
+
+.carrito__contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+.carrito__vacio {
+    padding: 16px;
+
+    border: 1px dashed var(--color-borde);
+    border-radius: var(--radio-md);
+
+    background-color: #faf9ff;
+
+    color: var(--color-texto-suave);
+    text-align: center;
+}
+
+
+/* =========================
+   ITEM DEL CARRITO
+========================= */
+
+.item-carrito {
+    padding: 16px;
+
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-md);
+
+    background-color: #fcfbff;
+}
+
+.item-carrito h3 {
+    margin-bottom: 8px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    color: var(--color-texto);
+}
+
+.item-carrito p {
+    margin-bottom: 6px;
+
+    color: var(--color-texto-suave);
+}
+
+.item-carrito p:last-child {
+    margin-bottom: 0;
+
+    font-weight: 700;
+    color: var(--color-acento);
+}
+
+
+/* =========================
+   RESUMEN DEL CARRITO
+========================= */
+
+.resumen-carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--color-borde);
+}
+
+.resumen-carrito__total {
+    font-size: 1.2rem;
+    color: var(--color-texto);
+}
+
+.resumen-carrito__total strong {
+    color: var(--color-principal);
+    font-size: 1.3rem;
+}
+
+
+/* =========================
+   BOTÓN VACIAR CARRITO
+========================= */
+
 #btn-vaciar-carrito {
+    padding: 12px 18px;
+
+    border: none;
+    border-radius: var(--radio-md);
+
     background-color: var(--color-peligro);
     color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+#btn-vaciar-carrito:hover {
+    background-color: #c24141;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(224, 82, 82, 0.22);
+}
+
+#btn-vaciar-carrito:active {
+    transform: scale(0.98);
 }
 
 /* =========================
