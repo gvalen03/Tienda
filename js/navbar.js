@@ -4,10 +4,6 @@ const navbarToggle =
 const navbarLinks =
     document.getElementById("navbar-links");
 
-const enlacesNavbar =
-    document.querySelectorAll(".navbar__links a");
-
-
 navbarToggle.addEventListener("click", () => {
 
     navbarLinks.classList.toggle("activo");
