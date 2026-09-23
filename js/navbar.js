@@ -4,6 +4,10 @@ const navbarToggle =
 const navbarLinks =
     document.getElementById("navbar-links");
 
+const enlacesNavbar =
+    document.querySelectorAll(".navbar__links a");
+
+
 navbarToggle.addEventListener("click", () => {
 
     navbarLinks.classList.toggle("activo");
@@ -19,15 +23,11 @@ navbarToggle.addEventListener("click", () => {
 
 });
 
-const enlacesNavbar =
-    document.querySelectorAll(".navbar__links a");
-
 enlacesNavbar.forEach(enlace => {
 
     enlace.addEventListener("click", () => {
 
         navbarLinks.classList.remove("activo");
-
         navbarToggle.classList.remove("activo");
 
         navbarToggle.setAttribute(
