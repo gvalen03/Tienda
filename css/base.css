@@ -1,31 +1,30 @@
 /* =========================
    VARIABLES GLOBALES
 ========================= */
-
 :root {
-    --color-fondo: #FFFDF7;
-    --color-superficie: #FFFFFF;
+    --color-fondo: #faf9f7;
+    --color-superficie: #ffffff;
 
-    --color-principal: #6D5DFB;
-    --color-secundario: #5145CD;
-    --color-acento: #FF8A65;
+    --color-principal: #6d5dfb;
+    --color-secundario: #5748d9;
+    --color-acento: #ff8a65;
+    --color-peligro: #e59177;
 
-    --color-texto: #2D2A32;
-    --color-texto-suave: #6B7280;
+    --color-texto: #2d2a32;
+    --color-texto-suave: #74707d;
 
-    --color-borde: #E8E5F2;
-
-    --color-exito: #2E9D69;
-    --color-peligro: #E05252;
+    --color-borde: #ece9f2;
 
     --radio-sm: 6px;
     --radio-md: 10px;
     --radio-lg: 14px;
 
-    --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --sombra-suave:
+        0 6px 20px rgba(0, 0, 0, 0.05);
 
     --ancho-maximo: 1200px;
 }
+
 
 /* =========================
    RESET

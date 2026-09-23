@@ -1,4 +1,50 @@
 /* =========================
+   ENCABEZADO DE LA TIENDA
+========================= */
+
+.encabezado-tienda {
+    max-width: 760px;
+
+    margin-bottom: 48px;
+
+    padding: 8px 0;
+}
+
+.encabezado-tienda__eyebrow {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: var(--color-principal);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.encabezado-tienda h1 {
+    margin-bottom: 12px;
+
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 750;
+
+    line-height: 1.1;
+
+    color: var(--color-texto);
+}
+
+.encabezado-tienda p {
+    max-width: 560px;
+
+    color: var(--color-texto-suave);
+
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* =========================
    BUSCADOR
 ========================= */
 
@@ -191,7 +237,7 @@
 }
 
 #btn-vaciar-carrito:hover {
-    background-color: #c24141;
+    background-color: #d67647;
     transform: translateY(-1px);
     box-shadow: 0 6px 14px rgba(224, 82, 82, 0.22);
 }
@@ -307,10 +353,7 @@
 }
 
 .producto:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.10);
+    transform: translateY(-4px);border-color:var(--color-principal);
 }
 
 
@@ -413,4 +456,96 @@
     color: var(--color-texto-suave);
 
     cursor: not-allowed;
+}
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.seccion-buscador {
+    max-width: 760px;
+
+    margin-bottom: 48px;
+}
+
+.seccion-buscador label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--color-texto);
+
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+
+/* CONTENEDOR */
+
+.buscador {
+    position: relative;
+}
+
+.buscador__icono {
+    position: absolute;
+
+    left: 16px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: var(--color-texto-suave);
+
+    pointer-events: none;
+}
+
+/* INPUT */
+
+.buscador input {
+    width: 100%;
+
+    padding-left: 44px;
+    padding: 14px 16px;
+
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-md);
+
+    background-color: var(--color-superficie);
+
+    color: var(--color-texto);
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* PLACEHOLDER */
+
+.buscador input::placeholder {
+    color: var(--color-texto-suave);
+
+    opacity: 0.8;
+}
+
+
+/* FOCUS */
+
+.buscador input:focus {
+    border-color: var(--color-principal);
+
+    box-shadow:
+        0 0 0 3px rgba(109, 93, 251, 0.10);
+}
+
+
+/* HOVER */
+
+.buscador input:hover {
+    border-color: #d8d4e4;
 }
